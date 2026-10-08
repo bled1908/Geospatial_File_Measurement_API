@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Test Geospatial Data</name>
+    <description>Sample KML file with Point, LineString, and Polygon features for testing.</description>
+
+    <!-- Feature 1: Point in Bangalore, India -->
+    <Placemark>
+      <name>Bangalore City Center</name>
+      <description>A sample point feature</description>
+      <ExtendedData>
+        <Data name="category">
+          <value>city</value>
+        </Data>
+        <Data name="population">
+          <value>12000000</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>77.5946,12.9716,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <!-- Feature 2: LineString representing a road -->
+    <Placemark>
+      <name>Sample Road</name>
+      <description>A sample linestring feature</description>
+      <ExtendedData>
+        <Data name="road_type">
+          <value>highway</value>
+        </Data>
+      </ExtendedData>
+      <LineString>
+        <coordinates>
+          77.5946,12.9716,0
+          77.6100,12.9800,0
+          77.6200,12.9900,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+    <!-- Feature 3: Polygon representing a park -->
+    <Placemark>
+      <name>Cubbon Park</name>
+      <description>A sample polygon feature</description>
+      <ExtendedData>
+        <Data name="type">
+          <value>park</value>
+        </Data>
+        <Data name="area_approx">
+          <value>120 hectares</value>
+        </Data>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              77.5800,12.9750,0
+              77.5950,12.9750,0
+              77.5950,12.9850,0
+              77.5800,12.9850,0
+              77.5800,12.9750,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <!-- Feature 4: Another polygon -->
+    <Placemark>
+      <name>Lalbagh Garden</name>
+      <description>Another polygon feature</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              77.5850,12.9500,0
+              77.5950,12.9500,0
+              77.5950,12.9600,0
+              77.5850,12.9600,0
+              77.5850,12.9500,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <!-- Feature 5: A longer linestring -->
+    <Placemark>
+      <name>Ring Road Section</name>
+      <description>A longer road segment</description>
+      <LineString>
+        <coordinates>
+          77.5500,12.9500,0
+          77.5600,12.9600,0
+          77.5700,12.9700,0
+          77.5800,12.9800,0
+          77.5900,12.9900,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>
